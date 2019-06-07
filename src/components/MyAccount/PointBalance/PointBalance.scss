@@ -1,0 +1,22 @@
+.pointBalanceWrapper {
+  width: 270px;
+  padding: 18px 0;
+  text-align: center;
+  float: right;
+  border-radius: 5px;
+  background:#FFFFFF;
+  border: 1px solid #D9D9D9;
+}
+.pointBalanceText {
+  display: inline;
+}
+.pointBalance {
+  color: #641E89;
+  font-weight: bold;
+}
+@media (max-width: 650px) {
+  .pointBalanceWrapper {
+    float: unset !important;
+    margin: auto;
+  }
+}

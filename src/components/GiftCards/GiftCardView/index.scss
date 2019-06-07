@@ -1,0 +1,204 @@
+.giftcard-wrapper-friends.card{
+    box-shadow : rgba(0, 0, 0, 0.1) 0 0 15px !important;
+}
+.giftcard-wrapper-friends {
+    .card {
+        box-shadow: rgba(0, 0, 0, 0.05) 0 0 40px !important;
+    }
+    h2.title{
+        color: #641E89;
+    }
+    .image-wrapper{
+        padding: 30px 0;
+        text-align: center;
+        display: block;
+        img{
+            box-shadow : rgba(0, 0, 0, 0.3) 0 0 15px !important;
+            border-radius: 10px;
+            min-width: 210px !important;
+            width: 36vw;
+            height: 22vw;
+        }
+    }
+}
+.footer-row{
+    background: #641E89;
+    color: white;
+}
+.delivery-form-wrapper input{
+    height: 60px !important;
+}
+.add-to-cart.btn{
+    background: #A23B8A;
+    color: white;
+}
+.add-to-wishlist.btn{
+    background: #4A4A4A;
+    color: white;
+}
+.delivery-form-wrapper{
+    a{
+        display: block;
+        padding: 13px 0;
+    }
+    button{
+        padding: 13px;
+    }
+}
+.tabs-card-wrapper-friends{
+    padding: 10px;
+    margin-top: 30px;
+    p{
+        padding: 20px;
+    }
+    .nav.nav-tabs{
+        padding: 0 0px;
+    }
+}
+.giftcard-wrapper-friends {
+    .nav-link-tab {
+        border: unset !important;
+        padding: 10px 30px !important;
+        :hover {
+            border-bottom: 2px solid #FFB500 !important;
+        }
+    }
+    .active.nav-link-tab{
+        border-bottom: 2px solid #FFB500 !important;
+    }
+}
+form.delivery-form-wrapper {
+    .form-group:nth-of-type(1) {
+        display: flex;
+        padding: 15px 0;
+        .clicked {
+            display: inline-block;
+            width: 1.1em;
+            height: 1.1em;
+            background: #FFB500;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 1px solid #641D89;
+        }
+        .notClicked {
+            display: inline-block;
+            width: 1.1em;
+            height: 1.1em;
+            background: lightgray;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .friend-radio-btn {
+            label {
+                margin-left: 10px;
+                display: inline-block;
+            }
+        }
+        .self-radio-btn {
+            margin-left: 55px;
+            label {
+                margin-left: 10px;
+                display: inline-block;
+            }
+        }
+    }
+    .range-input-wrapper{
+        input.range-slider{
+            width: 100%;
+            -webkit-appearance: none;
+            background: #FFB500;
+            color: #fff;
+            height: 6px !important;
+            border-radius: 150px;
+        }
+        input.range-slider::-webkit-slider-thumb{
+            border-radius: 50% !important;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #662089;
+            background: #FFB500;
+            cursor: pointer;
+        }
+        span{
+            color: #FFB500;
+            font-size: 14px;
+            padding: 5px;
+        }
+        span:nth-of-type(2){
+            float: right;
+        }
+    }
+  .checkbox-wrapper{
+    padding: 10px;
+  }
+  .styled-checkbox {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    // Box.
+    & + label:before {
+      content: '';
+      border: 1px solid #662089;
+      border-radius: 5px;
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 18px;
+      height: 18px;
+      background: white;
+    }
+
+    // Box hover
+    &:hover + label:before {
+      background: #FFB500 !important;
+    }
+
+    // Box focus
+    &:focus + label:before {
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    }
+
+    // Box checked
+    &:checked + label:before {
+      background: #FFB500;
+    }
+
+    // Disabled state label.
+    &:disabled + label {
+      color: #b8b8b8;
+      cursor: auto;
+    }
+
+    // Disabled box.
+    &:disabled + label:before {
+      box-shadow: none;
+      background: #ddd;
+    }
+
+    // Checkmark. Could be replaced with an image
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 9px;
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow:
+              2px 0 0 white,
+              4px 0 0 white,
+              4px -2px 0 white,
+              4px -4px 0 white,
+              4px -6px 0 white,
+              4px -8px 0 white;
+      transform: rotate(45deg);
+    }
+  }
+}

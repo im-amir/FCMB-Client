@@ -1,0 +1,17 @@
+.partners-wrapper{
+  text-align: center;
+  p{
+    max-width: 700px;
+    margin: auto;
+  }
+  div {
+    max-width: 1200px;
+    margin: 60px auto;
+    img {
+      border-radius: 10px;
+      margin: 5px 15px;
+      width: 130px;
+      height: 80px;
+    }
+  }
+}

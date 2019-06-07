@@ -1,0 +1,38 @@
+.navigatorParent{
+    background-color: #FFB500;
+    padding: 0 !important;
+
+}
+.navigatorParent {
+    .navItem {
+        padding: 12px 0;
+        max-height: 64px;
+        min-height: 64px;
+        width: 12vw;
+        text-align: center;
+        .nav-link {
+            min-width: 80px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .nav-item{
+        width: unset !important;
+    }
+}
+
+.navItem a{
+    color: #641D89 !important;
+    font-weight: bold;
+}
+.navbar-nav a:hover, .navbar-nav a:active,.navbar-nav a:visited {
+    background-color: #641D89 !important;
+    text-decoration: none !important;
+}
+.navbar-nav a:hover a {
+    color: white !important;
+}
+.footer-row{
+    background: #641E89;
+    color: white;
+}

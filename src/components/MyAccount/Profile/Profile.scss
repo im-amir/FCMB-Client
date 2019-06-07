@@ -1,0 +1,47 @@
+.profile-wrapper {
+  box-shadow : rgba(0, 0, 0, 0.2) 0 0 15px;
+  .row, div {
+    margin: 0;
+  }
+  >.row:nth-of-type(1){
+    background: #641E89;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  form{
+    >.row:nth-of-type(1){
+      padding: 20px 10px;
+      background: white;
+      label{
+        font-size: 12px;
+      }
+      input{
+        height: 60px !important;
+      }
+    }
+    >.row:nth-of-type(2){
+      background: #F1F1F1;
+      padding: 20px 30px;
+    }
+    >.row:nth-of-type(3){
+      padding: 20px 10px;
+      background: white;
+      label{
+        font-size: 12px;
+      }
+      input{
+        height: 60px !important;
+      }
+    }
+    >.row:nth-of-type(4){
+      padding: 20px;
+      background: white
+    }
+  }
+}
+.btn.changePassword{
+  background: #A23B8A;
+  padding: 10px 50px;
+  color: white;
+}

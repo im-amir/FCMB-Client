@@ -1,0 +1,42 @@
+.point-history-wrapper{
+  background: #EEEDED;
+  margin-left: -10px !important;
+  margin-right: -10px !important;
+  border-radius: 10px;
+  box-shadow : rgba(0, 0, 0, 0.2) 0 0 15px;
+  min-width: 310px;
+
+  tr:nth-of-type(1){
+    color: #737272;
+    th:nth-of-type(1){
+      padding: 15px;
+    }
+  }
+  tr:nth-of-type(2), tr:nth-of-type(3), tr:nth-of-type(4), tr:nth-of-type(6), tr:nth-of-type(7), tr:nth-of-type(8){
+    padding: 40px;
+    background: white;
+    border-bottom: 1px solid #DADADA;
+    td:nth-of-type(1){
+      padding: 15px;
+    }
+    td:nth-of-type(3){
+      color: #84BE40;
+    }
+  }
+  tr:nth-of-type(5), tr:nth-of-type(8){
+    padding: 40px;
+    background: white;
+    border-bottom: 1px solid #DADADA;
+    td:nth-of-type(1){
+      padding: 15px;
+    }
+    td:nth-of-type(3){
+      color: #F26274;
+    }
+  }
+  tr:not(:first-of-type){
+    padding: 40px;
+    background: white;
+    border-bottom: 1px solid #DADADA
+  }
+}

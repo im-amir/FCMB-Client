@@ -1,0 +1,18 @@
+.electronics-header-row{
+    background: #000000 url(/images/electronics.jpg) 100% 100% no-repeat;
+    .col{
+        color: white;
+        text-align: center;
+        padding: 10em 2em;
+    }
+    p {
+        min-width: 200px;
+    }
+}
+.footer-row{
+    background: #641E89;
+    color: white;
+}
+.header-container > .row{
+    margin-right: -180px;
+}

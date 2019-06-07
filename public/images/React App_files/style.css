@@ -1,0 +1,6 @@
+.card{
+    border-radius: 0.75rem !important;
+}
+#root{
+    overflow: hidden;
+}

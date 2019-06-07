@@ -1,0 +1,63 @@
+.giftcard-wrapper.card{
+    box-shadow : rgba(0, 0, 0, 0.1) 0 0 15px !important;
+}
+.giftcard-wrapper {
+    .card {
+        box-shadow: rgba(0, 0, 0, 0.05) 0 0 40px !important;
+    }
+    .image-wrapper-card{
+        text-align: center;
+        display: block;
+        padding: 30px;
+        img{
+            width: 30vw;
+            height: 31vw;
+        }
+    }
+}
+.footer-row{
+    background: #641E89;
+    color: white;
+}
+.delivery-form-wrapper input{
+    height: 60px !important;
+}
+.add-to-cart.btn{
+    background: #A23B8A;
+    color: white;
+}
+.add-to-wishlist.btn{
+    background: #4A4A4A;
+    color: white;
+}
+.delivery-form-wrapper{
+    a{
+        display: block;
+        padding: 13px 0;
+    }
+    button{
+        padding: 13px;
+    }
+}
+.tabs-card-wrapper{
+    padding: 10px;
+    margin-top: 30px;
+    p{
+        padding: 20px;
+    }
+    .nav.nav-tabs{
+        padding: 0 10px;
+    }
+}
+.giftcard-wrapper {
+    .nav-link-tab {
+        border: unset !important;
+        padding: 10px 40px !important;
+        :hover {
+            border-bottom: 2px solid #FFB500 !important;
+        }
+    }
+    .active.nav-link-tab{
+        border-bottom: 2px solid #FFB500 !important;
+    }
+}

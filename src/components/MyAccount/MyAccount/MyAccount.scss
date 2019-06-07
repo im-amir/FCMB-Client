@@ -1,0 +1,63 @@
+.my-account-wrapper{
+    background: #F9F9F9;
+    padding: 40px;
+
+    .container {
+        padding-bottom: 15em;
+        .account-tabs-selector-col .card{
+            background: white;
+            box-shadow : rgba(0, 0, 0, 0.1) 0px 0px 15px;
+            margin: 20px 0;
+            h3{
+                padding: 20px;
+                color: #641E89;
+            }
+            .nav{
+                all: unset;
+                .verticalNavUL{
+                    list-style: none;
+                    padding: 0;
+                    .nav-item{
+                        all: unset;
+                        .nav-link{
+                            all: unset;
+                        }
+                    }
+                    li{
+                        padding: 15px 30px;
+                        border-bottom: 1px solid #F1F1F1;
+                        :hover{
+                            background: #F6F6F6;
+                            border-left: 6px solid #FFB500;
+                            cursor: pointer;
+                        }
+                    }
+                    a, a:hover{
+                        color: #5C5C5C;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active.sideTab{
+    background: #F6F6F6 !important;
+    border-left: 6px solid #FFB500 !important;
+}
+
+.tab-pane>.summary-wrapper{
+    box-shadow : rgba(0, 0, 0, 0.2) 0 0 15px;
+}
+
+.next-page, .prev-page{
+    background: #000 !important;
+    color: white !important;
+}
+
+.tab-pane{
+    background: unset !important;
+    border: unset !important;
+}
+
