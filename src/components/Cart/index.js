@@ -10,11 +10,10 @@ class Index extends Component {
     render() {
         return (
             <Container fluid={true} className="containerParent">
-                <Container className="header-container">
-                    <Row className="p-3" style={{marginRight: '-180px'}}>
+            <Container className="header-container" fluid>
+                    <Row className="p-3">
                         <TopHeader />
-                    </Row>
-                </Container>
+                    </Row></Container>
                 <Row >
                     <Col xs={12}>
                         <Navigator />

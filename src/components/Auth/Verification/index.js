@@ -13,7 +13,7 @@ class Index extends Component {
         return (
             <Container fluid={true} className="containerParent">
                 <Row className="p-3">
-                    <TopHeader />
+                    <TopHeader page="activate"/>
                 </Row>
                 <Row >
                     <Col xs={12}>

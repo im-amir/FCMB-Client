@@ -1,0 +1,9 @@
+.dropdown_wrapper{
+  margin-right: 100px;
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .dropdown_wrapper{
+    margin-right: 0;
+  }
+}

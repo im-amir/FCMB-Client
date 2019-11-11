@@ -12,9 +12,9 @@
 .cart-parent-wrapper{
   background: #F9F9F9;
   padding: 40px;
-  .container{
-    padding-bottom: 15em;
-  }
+  // .container{
+    // padding-bottom: 15em;
+  // }
   .cart-child-wrapper{
     background: white;
     padding: 10px;
@@ -36,6 +36,7 @@
     margin-right: -10px;
     tr:nth-of-type(1) {
       color: #737272;
+      background: none;
       th:nth-of-type(1){
         padding: 20px;
       }
@@ -43,22 +44,22 @@
         text-align: center;
       }
     }
-    tr:nth-of-type(2), tr:nth-of-type(3), tr:nth-of-type(4){
+    tr{
       padding: 40px;
       background: white;
       border-bottom: 2px solid #DADADA;
       td:nth-of-type(1){
-        max-width: 300px;
+        max-width: 200px;
         padding: 25px;
         img {
-          width: calc(80px + 8vw);
-          height: calc(50px + 5vw);
+          width: calc(40px + 6vw);
+          height: calc(40px + 6vw);
           border-radius: 5px;
         }
         span {
           display: inline-flex;
           padding-left: 15px;
-          max-width: 220px;
+          max-width: 150px;
         }
       }
       td:nth-of-type(2) select{
@@ -67,28 +68,46 @@
       td:nth-of-type(3){
         color: #FFB604;
         text-align: center;
+        font-weight: bold;
       }
       td:nth-of-type(4){
         text-align: center;
       }
     }
-    tr:nth-of-type(5){
-      background: white;
-      td:nth-of-type(1){
-        text-align: right;
+
+    tr:nth-of-type(1) {
+      color: #737272 !important;
+      th:nth-of-type(1){
         padding: 20px;
-        h5{
-          color: #4A4A4A;
-        }
       }
-      td:nth-of-type(2){
-        text-align: right;
-        h4{
-          margin-right: 30px;
-          color: #4A4A4A;
-        }
+      th:nth-of-type(3){
+        text-align: center;
       }
     }
+    
+
+
+.btnUpdate{
+  padding: 2% !important;
+}
+
+    // tr{
+    //   background: white;
+    //   td:nth-of-type(1){
+    //     text-align: right;
+    //     padding: 20px;
+    //     h5{
+    //       color: #4A4A4A;
+    //     }
+    //   }
+    //   td:nth-of-type(2){
+    //     text-align: right;
+    //     h4{
+    //       margin-right: 30px;
+    //       color: #4A4A4A;
+    //     }
+    //   }
+    // }
   }
 }
 @media (max-width: 490px) {
@@ -103,6 +122,11 @@
       }
     }
   }
+  
+.btnUpdate{
+  padding: 2% !important;
+}
+
 }
 @media (max-width: 410px) {
   .shopping-table-row tr td:nth-of-type(1) span{
@@ -127,4 +151,98 @@
     color: #FEFEFE;
     background: #A23B8A;
   }
+  
+.btnUpdate{
+  padding: 2% !important;
+}
+
+}
+
+
+.btnUpdate{
+  padding: 1% !important;
+  margin-left: 15px !important;
+}
+
+
+.shopping-table-row tr:nth-of-type(6) td:nth-of-type(1){
+  text-align: left !important;
+  padding: 20px 30px !important;
+}
+
+.shopping-table-row tr:nth-of-type(7) td:nth-of-type(1){
+  text-align: left !important;
+  padding: 20px 30px !important;
+}
+
+.deliveryInfoWrapper {
+  padding: 15px;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+
+.delivery-form-wrapper {
+  // box-sizing: border-box;
+  width: 100%;
+}
+
+.pointsCalculate {
+  width: 30%;
+  text-align: right;
+  float: right;
+  margin-right: 5%;
+}
+
+.pointsCalculate table{
+  width: 100%;
+}
+.pointsCalculate table tr td:nth-child(1){
+  width: 40%;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+
+.pointsCalculate table tr td:nth-child(2){
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.cartListImages img {
+  float: left;
+  line-height: calc(40px + 6vw);
+  vertical-align: middle
+}
+.cartListImages p {
+  margin-left: 10px;
+  height: calc(40px + 6vw);
+  line-height: calc(40px + 6vw);
+  float: left;
+}
+
+
+.deliveryInfo{
+  width: auto !important;
+}
+
+.deliveryInfo tr td:nth-child(1) {
+  width: 30%;
+}
+
+
+.btnChangeDelivery, .btnUpdate{
+  box-shadow: 0 0 12px #dadada;
+  width: 150px;
+  padding: 15px 0 !important;
+  border-color: #641E89 !important;
+  color: #641E89 !important;
+  border: 1px solid #641E89 !important;
+  border-radius: 3px !important;
+  margin-right: 15px !important;
 }

@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import {Row, Pagination, PaginationItem, PaginationLink} from 'reactstrap';
 import './OrderHistory.scss';
 import OrderView from "./OrderView/OrderView";
+import {withRouter} from 'react-router-dom';
+import {connect} from "react-redux";
+import * as actionCreators from '../../../actions/index.js';
 
 class OrderHistory extends Component {
     constructor(props) {
@@ -11,6 +14,13 @@ class OrderHistory extends Component {
     handleClick = () => {
         this.setState({orderDisplay: !this.orderDisplay})
     };
+
+
+    componentWillMount(){
+        console.log(this.props.userAccount);
+        this.props.getUserOrders(this.props.userAccount.UserId);
+    }
+
     render() {
         let order = {id: 324234234, status: "Delivered", points: 100, date: "29/09/18"};
         return ([
@@ -22,76 +32,20 @@ class OrderHistory extends Component {
                         <th>Points</th>
                         <th>Date</th>
                     </tr>
-                    <tr onClick={this.handleClick}>
-                        <td>
-                            #324234234
-                        </td>
-                        <td>
-                            Delivered
-                        </td>
-                        <td>100pts</td>
-                        <td>29/09/18</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            #324234234
-                        </td>
-                        <td>
-                            Delivered
-                        </td>
-                        <td>100pts</td>
-                        <td>29/09/18</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            #324234234
-                        </td>
-                        <td>
-                            Cancelled
-                        </td>
-                        <td>100pts</td>
-                        <td>29/09/18</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            #324234234
-                        </td>
-                        <td>
-                            Delivered
-                        </td>
-                        <td>100pts</td>
-                        <td>29/09/18</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            #324234234
-                        </td>
-                        <td>
-                            Delivered
-                        </td>
-                        <td>100pts</td>
-                        <td>29/09/18</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            #324234234
-                        </td>
-                        <td>
-                            Delivered
-                        </td>
-                        <td>100pts</td>
-                        <td>29/09/18</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            #324234234
-                        </td>
-                        <td>
-                            Delivered
-                        </td>
-                        <td>200pts</td>
-                        <td>29/09/18</td>
-                    </tr>
+                    { this.props.userOrders && this.props.userOrders.map(o => (
+
+                        <tr key={o.orderNumber} onClick={this.handleClick}>
+                            <td>
+                                {o.orderNumber}
+                            </td>
+                            <td>
+                                {o.status}
+                            </td>
+                            <td>{o.points}</td>
+                            <td>{o.dateTime}</td>
+                        </tr>
+                    ))
+                    }
                     <tr>
                         <td colSpan={4}>
                             <Pagination>
@@ -101,26 +55,6 @@ class OrderHistory extends Component {
                                 <PaginationItem>
                                     <PaginationLink href="#">
                                         1
-                                    </PaginationLink>
-                                </PaginationItem>
-                                <PaginationItem>
-                                    <PaginationLink href="#">
-                                        2
-                                    </PaginationLink>
-                                </PaginationItem>
-                                <PaginationItem>
-                                    <PaginationLink href="#">
-                                        3
-                                    </PaginationLink>
-                                </PaginationItem>
-                                <PaginationItem>
-                                    <PaginationLink href="#">
-                                        4
-                                    </PaginationLink>
-                                </PaginationItem>
-                                <PaginationItem>
-                                    <PaginationLink href="#">
-                                        5
                                     </PaginationLink>
                                 </PaginationItem>
                                 <PaginationItem>
@@ -139,4 +73,15 @@ class OrderHistory extends Component {
 }
 
 
-export default OrderHistory;
+const mapStateToProps=(state)=>({
+    userAccount:state.loggedInUserAccount,
+    userOrders: state.userOrders
+  })
+  
+  const mapDispatchToProps = dispatch => {
+    return {
+        getUserOrders: (userId) => dispatch(actionCreators.getUserOrders(userId))
+    }
+  }
+  
+  export default connect(mapStateToProps,mapDispatchToProps)(withRouter(OrderHistory));

@@ -12,9 +12,11 @@ class Index extends Component {
     render() {
         return (
             <Container fluid={true} className="containerParent">
-                <Row className="p-3">
-                    <TopHeader />
-                </Row>
+                <Container fluid>
+                    <Row className="p-3">
+                        <TopHeader page="login"/>
+                    </Row>
+                </Container>
                 <Row >
                     <Col xs={12}>
                         <Navigator />

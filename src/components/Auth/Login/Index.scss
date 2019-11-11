@@ -1,18 +1,12 @@
-.container-fluid{
-    margin: 0 !important;
-    padding: 0 !important;
+.container-fluid {
+  margin: 0 !important;
+  padding: 0 !important;
 }
-.headerSection{
-    background: #000000 url(/images/header.jpg) 100% 100% no-repeat;
-    height: 600px;
+.headerSection {
+  background: #000000 url(/images/header.jpg) 100% 100% no-repeat;
+  height: 600px;
 }
-@media (min-width: 1200px) {
-    .header-container{
-        max-width: 1300px !important;
-    }
-
-}
-.footer-row{
-    background: #641E89;
-    color: white;
+.footer-row {
+  background: #641e89;
+  color: white;
 }

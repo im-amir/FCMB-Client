@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Arboria Bold";
+  src: url(/fonts/Arboria-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Arboria Medium";
+  src: url(/fonts/Arboria-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Arboria Light";
+
+  src: url(/fonts/Arboria-Light.ttf) format("truetype");
+}
+body {
+  font-family: "Arboria Medium", serif;
+}
+.logout_btn {
+  color: #641d89;
+  width: 150px;
+  margin-left: 40px;
+}
+.close_icon {
+  color: #ec2941;
+  border: 1px solid #ec2941;
+  border-radius: 50%;
+  float: right;
+  padding: 0 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.image_wrapper {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+.image_wrapper img {
+  min-width: 90%;
+}
+.items-wrapper {
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  padding-right: 17px;
+  box-sizing: content-box;
+}

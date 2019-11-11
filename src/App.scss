@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Arboria Bold";
+  src: url(/fonts/Arboria-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Arboria Medim";
+  src: url(/fonts/Arboria-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Arboria Light";
+
+  src: url(/fonts/Arboria-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Arboria Bold1";
+  src: url(/fonts/Arboria-Book-Bold.ttf) format("truetype");
+}
+
+body {
+  font-family: "Arboria Light";
+}

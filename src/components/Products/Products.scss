@@ -1,0 +1,110 @@
+.electronics-parent-wrapper{
+    background: #F9F9F9 !important;
+    .electronics-wrapper{
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    .categories-wrapper{
+        .inner-wrapper{
+            float: right;
+            width: 100%;
+            margin: auto !important;
+            justify-content: center;
+            min-width: 194px;
+            border-radius: 10px;
+            background: #FFFFFF;
+            box-shadow : rgba(0, 0, 0, 0.1) 0 0 15px !important;
+            h3{
+                color: #641F89;
+                padding: 25px 40px !important;
+            }
+            input[type="checkbox"]{
+                width: 19px;
+                height: 19px;
+            }
+            .form-check-label{
+                padding: 3px 40px !important;
+            }
+            p {
+                padding: 3px 0 0 20px;
+            }
+        }
+    }
+    .showcase-wrapper{
+        .search-row{
+            input{
+                height: 57px;
+            }
+            .btn{
+                width: 90%;
+                color: white;
+                background: #A23B8A;
+                padding: 15px;
+            }
+        }
+        .item-image-card{
+            padding: 20px 2px;
+            border: 1px solid lightgray;
+            border-radius: 7px;
+            text-align: center;
+            position: relative;
+            button {
+              position: absolute;
+              left: 24%;
+              top: 40%;
+              background: #A23B8A;
+              width: 130px;
+              color: white;
+              display: none;
+            }
+            img{
+                width: 16vw;
+                height: 14vw;
+                object-fit: scale-down;
+            }
+        }
+      .item-image-card:hover{
+        border: 1px solid #FFB500;
+        box-shadow: 0 0 20px #ddd;
+        cursor: pointer;
+        button{
+          display: block;
+        }
+      }
+        .showcase-inner-wrapper{
+            margin-top: 30px;
+            margin-left: 2px;
+            padding: 40px 20px 150px 20px;
+            border-radius: 10px;
+            box-shadow : rgba(0, 0, 0, 0.1) 0 0 15px !important;
+            background: white;
+            .row h2{
+              color: #641E89;
+            }
+            .item-wrapper{
+              padding-top: 30px;
+              span{
+                display: block;
+                color: #65208A;
+                font-weight: bold;
+              }
+          }
+        }
+    }
+    }
+}
+@media (max-width: 768px) {
+  .showcase-wrapper{
+    margin-top: 30px;
+  }
+  .categories-wrapper .inner-wrapper{
+    float: unset !important;
+    width: 70% !important;
+  }
+}
+
+.item-wrapper p {
+  clear: both;
+  margin-top:10px;
+  font-size: 14px;
+}

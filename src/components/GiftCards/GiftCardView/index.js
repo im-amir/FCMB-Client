@@ -36,7 +36,7 @@ class SendToFriend extends Component {
     render() {
         return (
             <Container fluid={true} className="containerParent">
-                <Container className="header-container">
+                <Container className="header-container" fluid>
                     <Row className="p-3" style={{marginRight: '-180px'}}>
                         <TopHeader />
                     </Row>

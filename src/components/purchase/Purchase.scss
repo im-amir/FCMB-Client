@@ -1,0 +1,45 @@
+.add_product_wrapper{
+  z-index: 50;
+  margin: 10px auto;
+  .container{
+    margin-top: 20px;
+    margin-bottom: 180px;
+    form{
+      padding: 20px 40px;
+      label{
+        opacity: 0.5;
+        font-weight: normal;
+        padding: 0 10px;
+      }
+      input{
+        height: 45px;
+      }
+      .row{
+        .form-group{
+          [class*="col"]{
+            input{
+              top: 25px;
+              margin: 10px;
+              width: 90%;
+              border-color: #e4e4e4;
+              border-radius: 2px;
+            }
+            span{
+              display: block;
+              color: #37474F;
+              width: 200px;
+              height: 3em;
+              padding: 10px 0;
+              background: #D8D8D8;
+            }
+          }
+        }
+      }
+      button{
+        margin-top: 30px;
+        color: #4C2860;
+        float: right;
+      }
+    }
+  }
+}

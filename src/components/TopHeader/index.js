@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Col} from 'reactstrap'
 import TopHeaderRightPart from './TopHeaderRightPart'
+import './index.scss'
 
 class Index extends Component {
     constructor(props){
@@ -18,12 +19,12 @@ class Index extends Component {
 
     render() {
         return ([
-        <Col key={1} md={{size:2, offset: 0}} sm={2} xs={1} style={{minWidth: '60px'}}>
+        <Col key={1}>
             <Link to="/">
-                <img src="/images/logo.png" alt=""/>
+                <img src="/images/logo.png" alt="" className="logo_login"/>
             </Link>
         </Col>,
-        <TopHeaderRightPart isLoggedIn={this.state.isLoggedIn} />
+        <TopHeaderRightPart page={this.props.page} isLoggedIn={this.state.isLoggedIn} />
     ]
     );
     }

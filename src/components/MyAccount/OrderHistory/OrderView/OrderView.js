@@ -3,10 +3,7 @@ import {Col, Row} from 'reactstrap';
 import './OrderView.scss';
 
 class OrderView extends Component {
-    constructor(props) {
-        super(props);
-    }
-
+   
     render() {
         console.log(this.props.orderData);
         return (

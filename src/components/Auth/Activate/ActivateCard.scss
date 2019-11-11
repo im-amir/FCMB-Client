@@ -4,71 +4,91 @@
   margin-top: 50px;
   width: 85%;
   .card-body{
-    padding: 30px;
+    padding: 30px 24px 30px 30px;
   }
-  .card-title h2{
+  .card-title h3{
     color: #641E89;
     font-family: 'Roboto', sans-serif;
   }
   .card-subtitle h6{
     opacity: 0.4;
   }
-  form{
-    .form-group:nth-of-type(1){
+  form {
+    .form-group:nth-of-type(1) {
       display: flex;
-      padding: 15px 0;
+      padding: 25px 0 5px 0;
       .clicked {
         display: inline-block;
         width: 1.1em;
         height: 1.1em;
-        background: #FFB500;
+        background: #ffb500;
         cursor: pointer;
         border-radius: 50%;
-        border: 1px solid #641D89;
+        border: 1px solid #641d89;
       }
       .notClicked {
         display: inline-block;
         width: 1.1em;
         height: 1.1em;
-        background: lightgray;
+        background: #ffffff;
         cursor: pointer;
+        border: 1px solid gray;
         border-radius: 50%;
       }
-      .account-radio-btn{
+      .account-radio-btn {
+        font-size: 14px;
+        width: 117%;
+        display: flex;
+        div {
+          flex: 2;
+        }
         label {
-          margin-left: 10px;
-          display: inline-block;
+          flex: 10;
+          margin-top: -3px;
         }
       }
-      .debit-radio-btn{
-        margin-left: 55px;
+      .debit-radio-btn {
+        font-size: 14px;
+        width: 100%;
+        display: flex;
+        div {
+          flex: 2;
+        }
         label {
+          flex: 10;
           margin-left: 10px;
-          display: inline-block;
+          margin-top: -3px;
         }
       }
     }
-    .form-group:nth-of-type(2){
-      margin: 25px 0;
-      input{
-        height: 60px;
+    .form-group:nth-of-type(2) {
+      margin: 10px 0;
+      input {
+        height: 50px;
+        width: 95%;
       }
     }
-    .form-group:nth-of-type(3){
-      button{
-        background: #FFB500;
+    .form-group:nth-of-type(3) {
+      button {
+        background: #ffb500;
         color: white;
         padding: 0 30px;
         height: 60px;
         margin: 20px 0 5px 0;
+        width: 95%;
       }
     }
-    >a:nth-of-type(1){
-      color: #A23B8A;
-      display: block;
+    > p {
+      color: #a23b8a;
+      display: inline-block;
     }
-    >a:nth-of-type(2){
-      color: #A23B8A
+    > a{
+      color: #a23b8a;
+      transition: all 2s;
+      text-decoration: none;
+    }
+    > a:hover{
+      text-decoration: underline;
     }
   }
 }

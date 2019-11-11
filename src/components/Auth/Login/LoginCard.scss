@@ -1,12 +1,12 @@
 .login-card-parent-wrapper .card{
   min-width: 300px;
   color: black;
-  margin-top: 50px;
+  margin-top: 40px;
   width: 85%;
   .card-body{
     padding: 30px;
   }
-  .card-title h2{
+  .card-title h3{
     color: #641E89;
     font-family: 'Roboto', sans-serif;
   }
@@ -14,13 +14,13 @@
     .form-group:nth-of-type(1){
       margin: 25px 0;
       input{
-        height: 60px;
+        height: 50px;
       }
     }
     .form-group:nth-of-type(2){
       margin: 25px 0 5px 0;
       input{
-        height: 60px;
+        height: 50px;
       }
     }
     .form-group:nth-of-type(3){
@@ -28,7 +28,7 @@
         background: #FFB500;
         color: white;
         padding: 0 30px;
-        height: 60px;
+        height: 50px;
         margin: 20px 0 5px 0;
       }
     }

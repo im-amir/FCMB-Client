@@ -45,3 +45,13 @@
   padding: 10px 50px;
   color: white;
 }
+@media (max-width: 992px) {
+  .account_number{
+    margin-left: 0;
+  }
+}
+@media (min-width: 767px) {
+  .account_number{
+    margin-left: -20px;
+  }
+}

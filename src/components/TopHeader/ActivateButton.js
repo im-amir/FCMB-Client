@@ -12,11 +12,11 @@ const style = {
 }
 const ActivateButton = () => {
     return (
-        <Col key={3} xs={{size: 2, offset: 0}} className="activate-button-wrapper">
+        <div key={3} className="activate-button-wrapper">
             <Link to="/activate">
                 <button className="btn" style={style.activateBtn}>Activate</button>
             </Link>
-        </Col>
+        </div>
     );
 };
 
